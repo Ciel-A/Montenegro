@@ -453,5 +453,23 @@ margin: 20px;
         display: block;
     }
         
-    
+    .navbar {
+        order: -1; /* Cambia el orden, mueve el menú hacia arriba */
+        width: 100%; /* Asegura que ocupe el ancho completo */
+    }
+
+    .logo {
+        text-align: right; /* Alinea el logo a la derecha */
+        width: 100%; /* Asegura que ocupe el ancho completo */
+        margin-top: 10px; /* Añadido para separar del menú */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .navbar li {
+        margin: 10px 0; /* Espacio entre elementos */
+    }
 }
