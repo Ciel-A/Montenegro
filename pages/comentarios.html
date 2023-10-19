@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comentarios del Restaurante</title>
-    <link rel="stylesheet" href="../css/ejemplo.css"> <!-- Asegúrate de vincular tu archivo CSS aquí -->
+    <link rel="stylesheet" href="../css/ejemplo.css">
 </head>
+
 <body>
 
-
-    
     <header>
         <ul class="container">
-            <a href="../index.html" class="logo"> <img src="/img/logo.png" alt="Logo">
-            </a>
-            <nav class="navbar">
+            <a href="../index.html" class="logo"> <img src="../img/logo.png" alt="Logo"></a>
+            <input type="checkbox" id="toggle" class="checkbox-input">
+            <label for="toggle" class="menu-toggle">&#9776;</label>
+            
+            <nav class="navbarr">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../pages/menu.html">Menú</a></li>
-                    <li> <a href="../pages/reserva.html"> reserva</a> </li>
+                    <li> <a href="../pages/reserva.html">Reserva</a> </li>
                     <li><a href="../pages/contacto.html">Contacto</a></li>
                     <li><a href="../pages/comentarios.html">Comentarios y Opiniones</a></li>
                     <li><a href="../pages/galeria.html">Galería</a></li>
@@ -26,46 +28,40 @@
             </nav>
         </ul>
     </header>
-    
+    <main class="main-comentarios">
+        <div class="fondo">
+            <section class="comentarios">
+                <h1 class="label-coment">Dejanos tu Comentario</h1>
 
+                <form id="formulario-comentario">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
 
-<Main class="main-comentarios"></Main>
-<div class="fondo">
-    <section class="comentarios">
-        <h1 class="label-coment">Dejanos tu Comentario</h1>
+                    <div class="campo">
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" required></textarea>
+                        <button type="submit">Enviar Comentario</button>
+                    </div>
+                </form>
 
-        <form id="formulario-comentario">
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
+                <h2 class="label-coment">Comentarios Anteriores</h2>
+                <div class="comentarios-anteriores">
+                    <!-- Aquí se mostrarían los comentarios anteriores -->
+                </div>
 
-            <div class="campo">
-                <label for="comentario">Comentario:</label>
-                <textarea id="comentario" name="comentario" required></textarea>
-                <button type="submit">Enviar Comentario</button>
-            </div>
-
-          
-        </form>
-        <h2 class="label-coment">Comentarios Anteriores</h2>
-        <div class="comentarios-anteriores">
-            
-            <!-- Aquí se mostrarían los comentarios anteriores -->
+            </section>
         </div>
-        
-    </div>
-    </section>
+     </main>
 
-    <!-- pie de página -->
-    
     <footer>
-        <ul class="redes-sociales">
-            <li><a href="https://www.facebook.com/p/Atte-Pizzeria-Napoletana-100066646640590/?locale=es_ES" target="_blank">Facebook</a></li>
-            <li><a href="enlace-a-tu-twitter" target="_blank">Twitter</a></li>
-            <li><a href="https://www.instagram.com/attepizza/?hl=es" target="_blank">Instagram</a></li>
-        </ul>
+        <nav class="redes-sociales">
+            <a href="https://www.facebook.com/p/Atte-Pizzeria-Napoletana-100066646640590/?locale=es_ES" target="_blank">Facebook</a>
+            <a href="enlace-a-tu-twitter" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/attepizza/?hl=es" target="_blank">Instagram</a>
+        </nav>
     </footer>
 </body>
-</html>
 
+</html>

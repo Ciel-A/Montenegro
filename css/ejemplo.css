@@ -8,7 +8,7 @@
 }
 
  /*    estilos del navbar*/
-.container { 
+ .container { 
     max-width: 100%;
     overflow: hidden;
     margin: 0 auto;
@@ -19,30 +19,44 @@
 }
 
 .logo img {
-     width: 100px; 
+    width: 100px; 
     height: 100px; 
 }
 
-.navbar ul {
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbarr ul {
     list-style: none;
     padding: 0;
     display: flex;
 }
 
-.navbar li {
+.navbarr li {
     margin: 0 7px;
 }
 
-.navbar a {
+.navbarr a {
     text-transform: uppercase;
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
-.navbar a:hover {
+.navbarr a:hover {
     color: #ff5733; 
+
+
 }
+.checkbox-input {
+    display: none;
+}
+
+
+
 /* finzaliza estilo navbar*/
 
 
@@ -159,6 +173,7 @@ footer {
     font-family:Arial, sans-serif;
     color: #fff;
     padding: 10 20px;
+    text-align: center;
    
 }
 /*--------------------------------------*/
@@ -449,27 +464,31 @@ margin: 20px;
 
 
  @media screen and (max-width: 600px) {
+    .container{
+        justify-content: left;
+    }
     .containerWrap{
         display: block;
     }
         
-    .navbar {
-        order: -1; /* Cambia el orden, mueve el menú hacia arriba */
-        width: 100%; /* Asegura que ocupe el ancho completo */
+   .menu-toggle {
+        display: block;
     }
 
-    .logo {
-        text-align: right; /* Alinea el logo a la derecha */
-        width: 100%; /* Asegura que ocupe el ancho completo */
-        margin-top: 10px; /* Añadido para separar del menú */
+    .navbarr ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left:150px;
+        width: 100%;
+        background-color: #4e88c7a2;
+        border-radius: 10px;
+        
     }
+    
 
-    .navbar ul {
-        flex-direction: column; /* Apila los elementos verticalmente */
-        align-items: center; /* Centra los elementos */
-    }
-
-    .navbar li {
-        margin: 10px 0; /* Espacio entre elementos */
+    #toggle:checked + .menu-toggle + .navbarr ul {
+        display: flex;
     }
 }
+

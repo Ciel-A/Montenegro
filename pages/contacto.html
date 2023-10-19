@@ -12,13 +12,15 @@
 
 <header>
     <ul class="container">
-        <a href="../index.html" class="logo"> <img src="/img/logo.png" alt="Logo">
-        </a>
-        <nav class="navbar">
+        <a href="../index.html" class="logo"> <img src="../img/logo.png" alt="Logo"></a>
+        <input type="checkbox" id="toggle" class="checkbox-input">
+        <label for="toggle" class="menu-toggle">&#9776;</label>
+        
+        <nav class="navbarr">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/menu.html">Menú</a></li>
-                <li> <a href="../pages/reserva.html"> reserva</a> </li>
+                <li> <a href="../pages/reserva.html">Reserva</a> </li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
                 <li><a href="../pages/comentarios.html">Comentarios y Opiniones</a></li>
                 <li><a href="../pages/galeria.html">Galería</a></li>
@@ -41,48 +43,57 @@
            
             <form action="">
                 
-            <p>
+            <div>
                 <label>Nombre Completo</label>
                 <input type="text" name="nombre">
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label>Correo Electronico</label>
                 <input type="email" name="email">
-            </p>
-            <p>
+            </div>
+            <div>
                 <label>Telefono</label>
                 <input type="tel" name="telefono">
-            </p>
-            <p>
+            </div>
+            <div>
                 <label>Asunto</label>
                 <input type="asunto" name="asunto">
-            </p>
-            <p class="colum1">
+            </div>
+            <div class="colum1">
                 <label>Mensaje</label>
                 <textarea name="Mensaje" cols="40" rows="7"></textarea>
-            </p>
+            </div>
             <button  class="colum1">ENVIAR</button>
         </form>
 
         </div>
         <div class="contInfor"> <!-- cuarto contenedor-->
-            <h4> MAS INFORMACION </h4>
-            <ul>
+            <h2> MAS INFORMACION </h2>
         
-                   <li></li> <i class="fa-solid fa-location-dot">Ubicacion</i> </li>
-                   <ul>
-                    <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.956846393213!2d-58.44230172505198!3d-34.579958456242466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5578fe09bd7%3A0x1bd9206479d70a51!2sAtte.%20Pizzeria%20Napoletana!5e0!3m2!1ses-419!2sar!4v1694885239561!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
-                   </li>
-                </ul>
-                   <li><i class="fa-solid fa-phone-flip">011 7508-1127</i></li>   
-                    <li><i class="fa-solid fa-square-envelope">attpizza@gmail.com</i></li>
-            
-        </ul>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias excepturi magnam quo praesentium facilis architecto illo dolorem officia, similique quod.</p>
-        <p>attpizzanapolinata.com</p>
-
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Ubicacion</span>
+            </div>
+        
+            <div class="info-item">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.956846393213!2d-58.44230172505198!3d-34.579958456242466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5578fe09bd7%3A0x1bd9206479d70a51!2sAtte.%20Pizzeria%20Napoletana!5e0!3m2!1ses-419!2sar!4v1694885239561!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+            <div class="info-item">
+                <i class="fa-solid fa-phone-flip"></i>
+                <span>011 7508-1127</span>
+            </div>
+        
+            <div class="info-item">
+                <i class="fa-solid fa-square-envelope"></i>
+                <span>attpizza@gmail.com</span>
+            </div>
+        
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias excepturi magnam quo praesentium facilis architecto illo dolorem officia, similique quod.</p>
+            <p>attpizzanapolinata.com</p>
         </div>
+        
         </div>
 
     </div>
@@ -91,11 +102,11 @@
       <!-- pie de página -->
     
       <footer>
-        <ul class="redes-sociales">
-            <li><a href="https://www.facebook.com/p/Atte-Pizzeria-Napoletana-100066646640590/?locale=es_ES" target="_blank">Facebook</a></li>
-            <li><a href="enlace-a-tu-twitter" target="_blank">Twitter</a></li>
-            <li><a href="https://www.instagram.com/attepizza/?hl=es" target="_blank">Instagram</a></li>
-        </ul>
+        <nav class="redes-sociales">
+            <a href="https://www.facebook.com/p/Atte-Pizzeria-Napoletana-100066646640590/?locale=es_ES" target="_blank">Facebook</a>
+            <a href="enlace-a-tu-twitter" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/attepizza/?hl=es" target="_blank">Instagram</a>
+        </nav>
     </footer>
 </body>
 </html>
