@@ -1,0 +1,90 @@
+/* Aquí comienza todos los estilos de mi sección de menu */
+
+.h1-menu {
+    text-align: center;
+    text-shadow: 0px 3px 10px rgba(92, 79, 204, 0.877);
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & {
+        background-image: url(../img/fondo.jpg); /* Ruta de tu imagen de fondo */
+        background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+        background-repeat: no-repeat; /* Evita la repetición de la imagen */
+        background-attachment: fixed; /* Fija la imagen en su posición */
+        color: #fff; /* Color del texto */
+    }
+
+    p {
+        font-size: 18px; /* Tamaño del texto */
+        color: white; /* Color del texto */
+        text-shadow: 2px 2px 4px red; /* Sombra del texto en rojo */
+    }
+
+    .item {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: flex-start; /* Alinea en la parte superior */
+        flex-direction: column; /* Apila los elementos uno encima del otro */
+        text-align: center; /* Centra el texto */
+
+        img {
+            max-width: 100%;
+            height: 90px;
+            width: 90px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            background-color: #925b5b77;
+            margin: 0;
+            display: inline-block;
+
+            li {
+                margin: 10px 0; /* Agregado el estilo de margen */
+            }
+
+            padding: 0 20px; /* Agregado el estilo de padding */
+        }
+    }
+
+    .item {
+        text-align: center;
+        align-items: center;
+    }
+
+    .item ul {
+        list-style: none;
+        background-color: #925b5b77;
+        margin: 0;
+        display: inline-block;
+
+        li {
+            margin: 10px 0; /* Agregado el estilo de margen */
+        }
+
+        padding: 0 20px; /* Agregado el estilo de padding */
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff4d;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}

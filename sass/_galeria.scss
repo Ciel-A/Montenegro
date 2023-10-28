@@ -1,0 +1,17 @@
+ /*aqui comienza la seccio nde galeria*/
+
+.card-img-top:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.card {
+    max-width: 600px; /* Establece el ancho máximo del contenedor */
+}
+
+.card-img-top {
+    max-width: 100%; /* Las imágenes no superarán el ancho del contenedor */
+    height: auto; /* Permite mantener la proporción de aspecto de la imagen */
+}
+
+/*fin estilo galeria*/

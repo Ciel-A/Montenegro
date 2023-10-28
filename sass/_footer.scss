@@ -1,0 +1,24 @@
+/* estilos footer*/
+footer {
+    background-color: #4e88c7a2;
+    padding: 20px;
+    text-align: center;
+
+    .redes-sociales {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 10px; /* Espacio entre los íconos de redes sociales */
+        }
+
+        a {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333; /* Color del texto de las redes sociales */
+        }
+    }
+}
+/*finaliza estilo footer*/

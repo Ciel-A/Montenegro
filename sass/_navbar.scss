@@ -1,0 +1,72 @@
+$color-primario: #4e88c7a2;
+$color-segundo: #ff5733;
+ 
+  /*    estilos del navbar*/
+.container {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-primario;
+    
+    .logo img {
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .navbarr ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbarr li {
+        margin: 0 7px;
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+
+            &:hover {
+                color: $color-segundo;
+            }
+        }
+    }
+
+    .checkbox-input {
+        display: none;
+    }
+}
+/* Define la animación */
+@keyframes hoverAnimation {
+    0% {
+      transform: scale(1); /* Escala normal al inicio */
+      transform-origin: center; /* Punto de origen en el centro */
+    }
+    50% {
+      transform: scale(1.1) rotate(180deg); /* Escala un poco más grande y da una vuelta de 180 grados a la mitad */
+    }
+    100% {
+      transform: scale(1); /* Regresa a la escala normal al final */
+    }
+  }
+  
+  /* Aplica la animación al hacer hover */
+  .logo {
+    &:hover {
+      animation: hoverAnimation 0.5s forwards; /* La animación dura 0.5 segundos y se queda en el estado final (forwards) */
+    }
+  }
+  
+/* finzaliza estilo navbar*/

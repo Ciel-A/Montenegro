@@ -1,0 +1,60 @@
+/*de aqui comienza la seccion de reservas */
+.reserva {
+    background-image: url(../img/pizza-fondo-reserva.jpg);
+    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen en su posición */
+    height: 100%;
+  }
+  
+  .reserva form label {
+    display: inline;
+  }
+  
+  .reserva form button,
+  .reserva form input,
+  .reserva form label {
+    background-color: rgba(24, 54, 54, 0.788);
+    border: none;
+    outline: none;
+  }
+  
+  .sub-reserva {
+    background-color: rgba(24, 54, 54, 0.788);
+  }
+  
+  .reserva,
+  .menu {
+    padding: 70px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
+  label,
+  input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  
+    &[type="submit"] {
+      border: none;
+      cursor: pointer;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  
+    li {
+      margin: 10px 0;
+    }
+  }
+  
