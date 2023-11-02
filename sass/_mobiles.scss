@@ -16,7 +16,8 @@
       flex-direction: column;
       position: absolute;
       left: 150px;
-      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
       background-color: #4e88c7a2;
       border-radius: 10px;
     }
