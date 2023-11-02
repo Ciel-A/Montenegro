@@ -383,18 +383,21 @@ ul li {
     display: block;
   }
   .menu-toggle {
-    display: block;
-  }
-  .navbarr ul {
+    display: none;
+}
+
+.navbarr ul {
     display: none;
     flex-direction: column;
     position: absolute;
     left: 150px;
-    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
     background-color: rgba(78, 136, 199, 0.6352941176);
     border-radius: 10px;
-  }
-  #toggle:checked + .menu-toggle + .navbarr ul {
+}
+
+#toggle:checked + .menu-toggle + .navbarr ul {
     display: flex;
-  }
+}
 }/*# sourceMappingURL=styles.css.map */
