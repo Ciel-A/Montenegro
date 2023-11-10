@@ -8,6 +8,12 @@
       color: #ff5733;
     }
   }
+  .contInfor iframe {
+  max-width: 100%; /* Establece el ancho máximo al 100% del contenedor padre */
+  height: 100%; /* Ajusta la altura al 100% del contenedor padre */
+  border: none; /* Quita el borde del iframe */
+}
+
   
   .containerWrap {
     background-image: url(../img/fondo\ pizzas.jpg);

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /*    estilos del navbar*/
 .logo:hover {
   animation: hoverAnimation 0.5s forwards;
@@ -129,6 +135,12 @@ footer .redes-sociales a {
   color: #ff5733;
 }
 
+.contInfor iframe {
+  max-width: 100%; /* Establece el ancho máximo al 100% del contenedor padre */
+  height: 100%; /* Ajusta la altura al 100% del contenedor padre */
+  border: none; /* Quita el borde del iframe */
+}
+
 .containerWrap {
   background-image: url(../img/fondo\ pizzas.jpg);
   display: grid;
@@ -180,8 +192,6 @@ footer .redes-sociales a {
 }
 
 /* Aquí comienza todos los estilos de mi sección de menu */
-
-
 .titulopizza {
   display: block;
   text-align: center;
@@ -191,7 +201,6 @@ footer .redes-sociales a {
   border-radius: 5px;
   box-shadow: 0 0 10px red, 0 0 20px green, 0 0 30px blue; /* Ajusta los colores y valores según lo necesites */
 }
-
 
 .contenedor {
   display: grid;
